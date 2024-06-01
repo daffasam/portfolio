@@ -1,0 +1,299 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Navbar */
+
+.navbar {
+  background-color: transparent;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar.scrolled {
+  background-color: #373a40;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: #eeeeee;
+}
+
+.navbar .nav-link:hover,
+.navbar .navbar-brand:hover {
+  color: #19d3da;
+}
+
+.navbar.scrolled .nav-link,
+.navbar.scrolled .navbar-brand {
+  color: #eeeeee;
+}
+
+.navbar.scrolled .nav-link:hover,
+.navbar.scrolled .navbar-brand:hover {
+  color: #19d3da;
+}
+
+.navbar-nav {
+  margin-right: 50px;
+}
+
+.nav-link {
+  margin: 0 12px;
+  font-weight: 450;
+  color: #eeeeee;
+}
+
+.navbar-brand {
+  margin-left: 50px;
+  color: white;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+/* Home Section */
+.home {
+  background-image: url("../gambar/bg2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.home .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  position: relative;
+}
+
+.home h1 {
+  color: #19d3da;
+  font-size: 65px;
+  font-weight: 700;
+  margin-top: 32px;
+}
+
+span {
+  color: white;
+}
+
+.home h2 {
+  color: #eeeeee;
+  margin: 20px 0;
+  font-weight: 400;
+}
+
+.sosmed {
+  display: flex;
+  flex-direction: row;
+  margin: 25px 0 0 0;
+  padding: 0;
+}
+
+.sosmed .sosmed-link a {
+  color: #19d3da;
+  margin: 0 15px;
+}
+
+.sosmed .sosmed-link a:hover {
+  color: white;
+}
+
+.navbar-brand:hover {
+  color: #76abae;
+}
+
+/* About Section */
+
+.about {
+  min-height: 100vh;
+  background-color: #eeeeee;
+}
+
+.about .container {
+  display: flex;
+  flex-direction: row;
+}
+
+.item-about {
+  padding-top: 115px;
+  width: 50%;
+}
+
+.about1 img {
+  max-width: 100%;
+  max-height: 400px;
+  min-width: 200px;
+  min-height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.about2 h2 {
+  width: 29%;
+  color: #373a40;
+  border-bottom: 2px solid #373a40;
+}
+
+.about2 p {
+  color: #686d76;
+  margin-top: 30px;
+}
+
+/* Experience section */
+
+.experience {
+  min-height: 100vh;
+  background-color: #373a40;
+  padding-top: 115px;
+}
+
+.experience h2 {
+  color: #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+  width: 14%;
+}
+
+.experience p {
+  width: 60%;
+  color: #eeeeee;
+}
+
+.item-experience {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.item-experience .card {
+  margin: 10px 10px;
+  width: 20rem;
+  height: 300px;
+  background-color: #eeeeee;
+  color: #373a40;
+}
+
+.item-experience .card p {
+  color: #373a40;
+  width: 100%;
+}
+
+/* project section */
+
+.project {
+  min-height: 100vh;
+  background-color: #eeeeee;
+  padding: 115px 0;
+}
+
+.project h2 {
+  color: #373a40;
+  border-bottom: 2px solid #373a40;
+  width: 9%;
+}
+
+.project-body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 40px;
+}
+
+.project .card {
+  padding: 20px;
+  width: 20rem;
+  background-color: #686d76;
+  color: #eeeeee;
+  box-shadow: #686d76;
+}
+
+.project p {
+  width: 60%;
+}
+
+.project .card p {
+  font-size: small;
+  width: 100%;
+}
+
+.card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* contact section */
+
+.contact {
+  min-height: 100vh;
+  background-color: #373a40;
+  padding-top: 115px;
+}
+
+.contact h2 {
+  color: #eeeeee;
+}
+
+.contact .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+  margin-top: 90px;
+}
+
+.contact li {
+  width: 350px;
+  text-align: center;
+  margin: 50px 2px;
+  color: #eeeeee;
+}
+
+.contact li h4 {
+  padding-top: 20px;
+}
