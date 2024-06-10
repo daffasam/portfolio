@@ -51,6 +51,8 @@ a {
   margin: 0 12px;
   font-weight: 450;
   color: #eeeeee;
+  position: relative;
+  padding-bottom: 3px;
 }
 
 .navbar-brand {
