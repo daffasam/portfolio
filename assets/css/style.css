@@ -252,7 +252,7 @@ span {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: 2.5rem;
   margin-top: 40px;
 }
 
@@ -275,6 +275,8 @@ span {
   cursor: pointer;
   overflow: hidden; /* Ensure the image doesn't overflow the card */
   box-shadow: 0 8px 50px #23232333;
+  background-color: #393e46;
+  box-shadow: rgba(0, 173, 181, 0.2) 0 15px 30px -5px;
 }
 
 .project .card img {
@@ -310,25 +312,19 @@ span {
   opacity: 1; /* Show overlay on hover */
 }
 
-.project .card .overlay h5 {
+.project .card .overlay h4 {
   margin-bottom: 10px;
-  color: #00adb5;
-}
-
-.project .card .overlay p {
-  margin: 0;
-  font-size: 14px;
   color: #eeeeee;
-  font-weight: 300;
 }
 
 .project .card .overlay a {
   font-size: small;
   font-weight: 400;
+  margin-top: 10px;
 
   color: #eeeeee;
   border: 1px solid #eeeeee;
-  padding: 5px 10px;
+  padding: 5px 15px;
   border-radius: 5px;
 }
 
@@ -337,7 +333,7 @@ span {
   font-weight: 400;
   background-color: #eeeeee;
   color: #222831;
-  padding: 5px 10px;
+  padding: 5px 15px;
   border-radius: 5px;
 }
 
@@ -352,7 +348,7 @@ span {
   justify-content: center;
   font-size: 25px;
   font-weight: bold;
-  background-color: #393e46;
+  background-color: #00adb5;
   transition: all 0.5s;
   z-index: 0;
 }
