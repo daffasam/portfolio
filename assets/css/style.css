@@ -194,41 +194,116 @@ span {
   padding-top: 115px;
 }
 
-.experience h2 {
+.experience .title-experience {
   color: #00adb5;
   border-bottom: 2px solid #00adb5;
   width: 14%;
 }
 
-.experience p {
-  width: 60%;
+.text-experience {
   color: #eeeeee;
 }
 
-.item-experience {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 30px 0;
+.timeline {
+  color: #19d3da;
+  position: relative;
+  max-width: 1200px;
+  margin-top: 100px;
 }
 
-.item-experience .card {
-  margin: 10px 10px;
-  width: 20rem;
-  height: 300px;
-  background-color: #393e46;
-  color: #00adb5;
+.timeline .container {
+  padding: 10px 50px;
+  position: relative;
+  width: 50%;
+  margin: 0;
 }
 
-.item-experience .card p {
+.timeline .text-box {
+  padding: 20px 30px;
+  position: relative;
+  border-radius: 7px;
+  font-size: 16px;
+  background: #393e46;
+  border-bottom: 3px solid #00adb5;
+}
+
+.timeline .left-container {
+  left: 0;
+}
+
+.timeline .right-container {
+  left: 50%;
+}
+
+.timeline .circle {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  right: -20px;
+  top: 32px;
+  z-index: 10;
+  background-color: #00adb5;
+}
+
+.right-container .circle {
+  left: -20px;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 100%;
+  background: #00adb5;
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: 1;
+  border-radius: 5px;
+  animation: moveline 2s linear forwards;
+}
+
+@keyframes moveline {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+.timeline .left-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #00adb5;
+  right: -15px;
+}
+
+.timeline .right-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #00adb5;
+  left: -15px;
+}
+.timeline .years {
+  font-weight: 600;
+}
+
+.timeline p {
+  margin-top: 10px;
   color: #eeeeee;
-  width: 100%;
-  font-size: small;
-  font-weight: 500;
 }
-
 /* project section */
 
 .project {
