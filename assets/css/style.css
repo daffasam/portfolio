@@ -322,9 +322,23 @@ span {
   font-weight: 300;
 }
 
-.project .overlay a {
+.project .card .overlay a {
   font-size: small;
   font-weight: 400;
+
+  color: #eeeeee;
+  border: 1px solid #eeeeee;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.project .card .overlay a:hover {
+  font-size: small;
+  font-weight: 400;
+  background-color: #eeeeee;
+  color: #222831;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
 .project .card::before,
