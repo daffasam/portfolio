@@ -258,7 +258,7 @@ span {
   padding: 0;
   font-size: 18px;
   font-weight: 500;
-  color: #00adb5;
+  color: #222831;
 }
 
 .socialDiv {
@@ -278,7 +278,7 @@ span {
 
 .socials {
   width: 90%;
-  fill: rgba(0, 173, 181);
+  fill: rgba(34, 40, 49);
 }
 
 /* Experience section */
