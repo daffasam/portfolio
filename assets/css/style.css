@@ -309,7 +309,7 @@ span {
 .timeline .container {
   padding: 10px 50px;
   position: relative;
-  width: 50%;
+  width: 100%;
   margin: 0;
 }
 
@@ -324,10 +324,12 @@ span {
 
 .timeline .left-container {
   left: 0;
+  width: 50%;
 }
 
 .timeline .right-container {
   left: 50%;
+  width: 50%;
 }
 
 .timeline .circle {
@@ -341,8 +343,32 @@ span {
   background-color: #00adb5;
 }
 
+.timeline .title-timeline {
+  color: #19d3da;
+  margin-bottom: 16px;
+}
+.timeline .text-box .title-job {
+  color: #00adb5;
+  margin: 0;
+  font-size: 16px;
+}
+
+.timeline .text-box .years {
+  color: #00adb5;
+  font-weight: 600;
+}
+
+.timeline .text-box .main {
+  margin: px 0;
+}
+
 .right-container .circle {
   left: -20px;
+}
+
+.timeline p {
+  margin-top: 10px;
+  color: #eeeeee;
 }
 
 .timeline::after {
@@ -391,14 +417,7 @@ span {
   border-right: 15px solid #00adb5;
   left: -15px;
 }
-.timeline .years {
-  font-weight: 600;
-}
 
-.timeline p {
-  margin-top: 10px;
-  color: #eeeeee;
-}
 /* project section */
 
 .project {
