@@ -423,6 +423,7 @@ span {
 .project {
   min-height: 100vh;
   background-color: #222831;
+  padding-top: 95px;
 }
 
 .project .text-project {
