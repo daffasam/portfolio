@@ -423,7 +423,6 @@ span {
 .project {
   min-height: 100vh;
   background-color: #222831;
-  padding: 115px 0;
 }
 
 .project .text-project {
@@ -443,7 +442,7 @@ span {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2.5rem;
-  margin-top: 40px;
+  margin-top: 90px;
 }
 
 .project p {
@@ -452,6 +451,7 @@ span {
 
 /* cards */
 
+/* 
 .project .card {
   position: relative;
   width: 220px;
@@ -463,7 +463,7 @@ span {
   font-weight: bold;
   border-radius: 15px;
   cursor: pointer;
-  overflow: hidden; /* Ensure the image doesn't overflow the card */
+  overflow: hidden; 
   box-shadow: 0 8px 50px #23232333;
   background-color: #393e46;
   box-shadow: rgba(0, 173, 181, 0.2) 0 15px 30px -5px;
@@ -472,8 +472,8 @@ span {
 .project .card img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Make sure the image covers the entire card */
-  transition: all 0.5s ease; /* Smooth transition */
+  object-fit: cover; 
+  transition: all 0.5s ease; 
 }
 
 .project .card .overlay {
@@ -486,7 +486,7 @@ span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  opacity: 0; /* Initially hidden */
+  opacity: 0;
   transition: opacity 0.5s ease;
   text-align: center;
   padding: 20px;
@@ -495,11 +495,11 @@ span {
 }
 
 .project .card:hover img {
-  transform: scale(1.1); /* Zoom in on hover */
+  transform: scale(1.1); 
 }
 
 .project .card:hover .overlay {
-  opacity: 1; /* Show overlay on hover */
+  opacity: 1; 
 }
 
 .project .card .overlay h4 {
@@ -563,12 +563,94 @@ span {
   transition: all 0.5s;
 }
 
+*/
+
+/* card2 */
+
+.project-info {
+  padding: 100px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  top: 0;
+}
+
+.project-title {
+  font-weight: 500;
+  font-size: 1.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #222831;
+}
+
+.lighter {
+  width: 100%;
+  font-size: 0.9em;
+  color: #222831;
+}
+
+.flex {
+  display: flex;
+}
+
+.tag {
+  font-weight: lighter;
+  color: grey;
+}
+
+.card2 {
+  margin: 12px 12px;
+  background-color: white;
+  color: black;
+  width: 420px;
+  max-height: 460px;
+  border-radius: 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.card2-img {
+  position: relative;
+  top: -20px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Change the .card-img div to .card-img img to use img*/
+.card2-img a,
+.card2-img img {
+  height: 265px;
+  width: 385px;
+  object-fit: cover;
+  /* Change this width here to change the width of the color/image */
+  border-radius: 12px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card2-imgs {
+  transition: all 0.5s;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  color: #393e46;
+}
+
+.card2 .fa-brands {
+  font-size: 26px;
+}
+
 /* contact section */
 
 .contact {
   min-height: 100vh;
   background-color: #222831;
-  padding-top: 115px;
+  padding-top: 90px;
 }
 
 .contact h2 {
