@@ -574,6 +574,7 @@ span {
   flex-direction: column;
   gap: 20px;
   position: relative;
+  transition: all 0.3s ease;
   top: 0;
 }
 
