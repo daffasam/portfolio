@@ -644,7 +644,6 @@ span {
 }
 
 .card2 .fa-brands {
-  absolute
   font-size: 26px;
 }
 
@@ -664,10 +663,19 @@ span {
   display: flex;
   flex-direction: column;
 }
+.body-contact {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 140px 0;
+}
 
 .item-contact {
+  color: white;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
